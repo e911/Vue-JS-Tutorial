@@ -12,6 +12,10 @@
       <h1>{{ job }}</h1>
       <a v-bind:href="website">My Site</a>
       <p v-html="websiteTag"></p>
+
+      <button v-on:click="add">Add Year</button>
+      <button v-on:click="subtract">Sub Year</button>
+      <p>My age is {{ age }}</p>
     </div>
     <!-- built files will be auto injected -->
   </body>

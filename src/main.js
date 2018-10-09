@@ -14,11 +14,18 @@ new Vue({
     name: 'Pujan',
     job: 'Ninja',
     website: 'http://thapapujan.com.np',
-    websiteTag: '<a href="http://thapapujan.com.np">Site</a>'
+    websiteTag: '<a href="http://thapapujan.com.np">Site</a>',
+    age: 25
   },
   methods: {
     greet: function (time) {
       return 'Good ' + time + ' ' + this.name
+    },
+    add: function () {
+      this.age++
+    },
+    subtract: function () {
+      this.age--
     }
   }
 })
