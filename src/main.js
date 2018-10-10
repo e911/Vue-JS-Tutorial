@@ -15,17 +15,23 @@ new Vue({
     job: 'Ninja',
     website: 'http://thapapujan.com.np',
     websiteTag: '<a href="http://thapapujan.com.np">Site</a>',
-    age: 25
+    age: 25,
+    x: 0,
+    y: 0
   },
   methods: {
     greet: function (time) {
       return 'Good ' + time + ' ' + this.name
     },
-    add: function () {
-      this.age++
+    add: function (inc) {
+      this.age += inc
     },
-    subtract: function () {
-      this.age--
+    subtract: function (dec) {
+      this.age -= dec
+    },
+    updateXY: function(event){
+      this.x = event.offsetX;
+      this.y = event.offsetY;
     }
   }
 })
