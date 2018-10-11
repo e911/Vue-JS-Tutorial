@@ -17,7 +17,11 @@ new Vue({
     websiteTag: '<a href="http://thapapujan.com.np">Site</a>',
     age: 25,
     x: 0,
-    y: 0
+    y: 0,
+    newName: '',
+    newAge: 30,
+    a: 0,
+    b: 0
   },
   methods: {
     greet: function (time) {
@@ -29,18 +33,26 @@ new Vue({
     subtract: function (dec) {
       this.age -= dec
     },
-    updateXY: function (event){
-      this.x = event.offsetX;
-      this.y = event.offsetY;
+    updateXY: function (event) {
+      this.x = event.offsetX
+      this.y = event.offsetY
     },
-    clickME: function (){
+    clickME: function () {
       alert('Event modifier: Prevent Default!')
     },
-    inputName: function(){
+    inputName: function () {
       alert('Entered name!')
     },
-    inputAge: function(){
+    inputAge: function () {
       alert('Entered Age!')
+    }
+  },
+  computed: {
+    addToA: function () {
+      return this.a + this.newAge
+    },
+    addToB: function () {
+      return this.b + this.newAge
     }
   }
 })

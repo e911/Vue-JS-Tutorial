@@ -8,22 +8,36 @@
   </head>
   <body>
     <div id="app">
-      <h1>{{ greet('Afternoon') }}</h1>
-      <p>{{ name }}</p>
-      <h1>{{ job }}</h1>
-      <a v-bind:href="website">My Site</a>
-      <a v-on:click.prevent='clickME' href="https://thapapujan.com.np">My Site</a>
-      <p v-html="websiteTag"></p>
+      <div class="box-left">
+        <h1>{{ greet('Afternoon') }}</h1>
+        <p>{{ name }}</p>
+        <h1>{{ job }}</h1>
+        <a v-bind:href="website">My Site</a>
+        <a v-on:click.prevent='clickME' href="https://thapapujan.com.np">My Site</a>
+        <p v-html="websiteTag"></p>
 
-      <button @click="add(1)">Add A Year</button>
-      <button v-on:click="subtract(1)">Sub A Year</button>
-      <button @dblclick="add(10)">Add 10 Year</button>
-      <button v-on:dblclick="subtract(10)">Sub 10 Year</button>
-      <p>My age is {{ age }}</p>
-      <h2>Keyboard event</h2>
-      <label>Name:</label><input type="text" v-on:keyup.enter="inputName"/>
-      <label>Age:</label><input type="text" @keyup.enter="inputAge"/>
+        <button @click="add(1)">Add A Year</button>
+        <button v-on:click="subtract(1)">Sub A Year</button>
+        <button @dblclick="add(10)">Add 10 Year</button>
+        <button v-on:dblclick="subtract(10)">Sub 10 Year</button>
+        <p>My age is {{ age }}</p>
+        <h2>Keyboard event</h2>
+        <label>Name:</label><input type="text" v-on:keyup.enter="inputName"/>
+        <label>Age:</label><input type="text" @keyup.enter="inputAge"/>
+        <h2>2-way data binding</h2>
+        <label>Name:</label><input type="text" v-model="newName"/><span>{{ newName }}</span>
+        <h2>Computed Properties</h2>
+        <p>Age : {{ newAge }}</p>
+        <button @click="a++">A</button>
+        <p>A -- {{ a }}</p>
+        <button @click="b++">B</button>
+        <p>B -- {{ b }}</p>
+        <span>Add to age A: {{ addToA }}</span>
+        <span>Add to age B: {{ addToB }}</span>
+
+      </div>
       <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+
 
     </div>
   </body>
