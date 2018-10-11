@@ -1,6 +1,10 @@
+.box-left{
+  float: left;
+}
 #canvas{
-  width:600px;
-  padding:200px 20px;
+  float: right;
+  width: 500px;
+  padding: 200px 20px;
   text-align: center;
   border: 1px solid #8b8c8c;
 }
