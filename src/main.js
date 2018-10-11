@@ -35,6 +35,12 @@ new Vue({
     },
     clickME: function (){
       alert('Event modifier: Prevent Default!')
+    },
+    inputName: function(){
+      alert('Entered name!')
+    },
+    inputAge: function(){
+      alert('Entered Age!')
     }
   }
 })

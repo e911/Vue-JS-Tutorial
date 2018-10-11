@@ -20,7 +20,11 @@
       <button @dblclick="add(10)">Add 10 Year</button>
       <button v-on:dblclick="subtract(10)">Sub 10 Year</button>
       <p>My age is {{ age }}</p>
+      <h2>Keyboard event</h2>
+      <label>Name:</label><input type="text" v-on:keyup.enter="inputName"/>
+      <label>Age:</label><input type="text" @keyup.enter="inputAge"/>
       <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+
     </div>
   </body>
 </html>
