@@ -29,9 +29,12 @@ new Vue({
     subtract: function (dec) {
       this.age -= dec
     },
-    updateXY: function(event){
+    updateXY: function (event){
       this.x = event.offsetX;
       this.y = event.offsetY;
+    },
+    clickME: function (){
+      alert('Event modifier: Prevent Default!')
     }
   }
 })

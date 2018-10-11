@@ -12,6 +12,7 @@
       <p>{{ name }}</p>
       <h1>{{ job }}</h1>
       <a v-bind:href="website">My Site</a>
+      <a v-on:click.prevent='clickME' href="https://thapapujan.com.np">My Site</a>
       <p v-html="websiteTag"></p>
 
       <button @click="add(1)">Add A Year</button>
@@ -21,6 +22,5 @@
       <p>My age is {{ age }}</p>
       <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
     </div>
-    <!-- built files will be auto injected -->
   </body>
 </html>
