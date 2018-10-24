@@ -21,7 +21,10 @@ new Vue({
     newName: '',
     newAge: 30,
     a: 0,
-    b: 0
+    b: 0,
+    dynamic: true,
+    available: false,
+    nearby: false
   },
   methods: {
     greet: function (time) {
@@ -53,6 +56,9 @@ new Vue({
     },
     addToB: function () {
       return this.b + this.newAge
+    },
+    dynaClasses: function(){
+      return {available: this.available, nearby: this.nearby}
     }
   }
 })
