@@ -8,3 +8,20 @@
   text-align: center;
   border: 1px solid #8b8c8c;
 }
+
+.dynamic span{
+  background: red;
+  display: inline-block;
+  padding: 10px;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.available span{
+  background: green;
+}
+
+.nearby span:after{
+  content: "nearby";
+  margin-left: 10px;
+}
