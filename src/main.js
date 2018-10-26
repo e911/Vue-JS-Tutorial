@@ -24,7 +24,9 @@ new Vue({
     b: 0,
     dynamic: true,
     available: false,
-    nearby: false
+    nearby: false,
+    error: false,
+    success: false
   },
   methods: {
     greet: function (time) {

@@ -43,14 +43,21 @@
         <div @click="available = !available" v-bind:class="{available: available, dynamic: dynamic}">
           <span>Pujan</span>
         </div>
-        <h2>Example 1</h2>
+        <h2>Example 2</h2>
         <button @click="available = !available">Toggle Available</button>
         <button @click="nearby = !nearby">Toggle Nearby</button>
         <div v-bind:class="dynaClasses" class="dynamic">
           <span>Thapa</span>
         </div>
 
-      </div>
+      </div>Conditional</h2>
+      <button @click="error= !error">Toggle Available</button>
+      <button @click="success= !success">Toggle Nearby</button>
+      <p v-if="error">Error!</p>
+      <p v-else-if="success">Success!</p>
+      <!--<p v-show="error">Error true!</p>-->
+      <!--<p v-show="success">Success true!</p>-->
+    </div>
 
       <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
 
