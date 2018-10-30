@@ -26,7 +26,13 @@ new Vue({
     available: false,
     nearby: false,
     error: false,
-    success: false
+    success: false,
+    whatis: ['Pujan', 'Thapa', 'Katunje', 'Bhaktapur'],
+    whatisnot: [
+      {name: 'Pujan', age: 20},
+      {name: 'Thapa', age: 18},
+      {name: 'Josh', age: 20}
+    ]
   },
   methods: {
     greet: function (time) {

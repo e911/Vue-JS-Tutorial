@@ -57,10 +57,24 @@
       <p v-else-if="success">Success!</p>
       <!--<p v-show="error">Error true!</p>-->
       <!--<p v-show="success">Success true!</p>-->
-    </div>
+
+      <div>Looping with v-for</div>
+      <ul>
+        <li v-for="what in whatis">{{ what }}</li>
+      </ul>
+      <ul>
+        <li v-for="(whatnot, index) in whatisnot">{{ index }}. {{ whatnot.name }} -- {{ whatnot.age }}</li>
+      </ul>
+      <!--using '<template>' tag, it loops through the inside elements and renders them, not like as in the above
+      example where the <li> is used or any other standard html tags are used in which the tag is looped too-->
+      <template v-for="whatnot in whatisnot">
+        <div v-for="(val, key) in whatnot">
+          {{ key }} -- {{ val }}
+        </div>
+      </template>
 
       <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+     </div>
 
-    </div>
   </body>
 </html>
