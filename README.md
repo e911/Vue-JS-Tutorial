@@ -1,7 +1,7 @@
 # vue-js-tut
 
 > A vue.js basic project
-> This is a practice session to learn vue.js and it follows the youtube tutorial taught by The Net Ninja. [YOUTUBE LINK HERE} (https://www.youtube.com/watch?v=5LYrN_cAJoA&index=1&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa)
+> This is a practice session to learn vue.js and it follows the youtube tutorial taught by The Net Ninja. [YOUTUBE LINK HERE] (https://www.youtube.com/watch?v=5LYrN_cAJoA&index=1&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa)
 
 ## Build Setup
 
