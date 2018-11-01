@@ -5,6 +5,10 @@ import App from './App'
 
 Vue.config.productionTip = false
 
+Vue.component('greeting', {
+  template: '<p>Calling from component.</p>'
+})
+
 /* eslint-disable no-new */
 var one = new Vue({
   el: '#app',

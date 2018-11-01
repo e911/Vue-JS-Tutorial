@@ -74,11 +74,13 @@
       </template>
 
       <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+      <greeting></greeting>
      </div>
-    <di id="new-instance">
+    <div id="new-instance">
       <p>{{ title }}</p>
       <p>From previous vue instance( NAME ): {{ fromOne }}</p>
-    </di>
+      <greeting></greeting>
+    </div>
 
   </body>
 </html>
