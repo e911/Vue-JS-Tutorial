@@ -6,7 +6,17 @@ import App from './App'
 Vue.config.productionTip = false
 
 Vue.component('greeting', {
-  template: '<p>Calling from component.</p>'
+  template: '<p>Calling from component {{ name }}. <button v-on:click="changeName">Change</button></p>',
+  data: function () {
+    return {
+      name: 'From Component'
+    }
+  },
+  methods: {
+    changeName: function () {
+      this.name = 'Changed'
+    }
+  }
 })
 
 /* eslint-disable no-new */
