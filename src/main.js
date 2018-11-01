@@ -6,7 +6,7 @@ import App from './App'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
+var one = new Vue({
   el: '#app',
   // components: { App },
   // template: '<App/>'
@@ -65,8 +65,20 @@ new Vue({
     addToB: function () {
       return this.b + this.newAge
     },
-    dynaClasses: function(){
+    dynaClasses: function () {
       return {available: this.available, nearby: this.nearby}
+    }
+  }
+})
+
+var two = new Vue({
+  el: '#new-instance',
+  data:{
+    title: 'New Vue Instance'
+  },
+  computed: {
+    fromOne: function () {
+      return one.name
     }
   }
 })
